@@ -17,7 +17,7 @@ namespace EjercicioEntregar2
             IBascula bascula = new BasculaService();
             ICocina cocina = new CocinaService();
             TurbomixService turbomix = new TurbomixService(bascula, cocina);
-
+            IRecetaRepository recetaRepository = new RecetaRepository();
             // Comprobar que son los ingredientes correctos.
             if (comprobadorDeIngredientes.ComprobarIngredientes(mAlimento1, mAlimento2, mReceta))
             {
@@ -33,6 +33,8 @@ namespace EjercicioEntregar2
                     }
                 }
             }
+            recetaRepository.Create(mReceta);
+
             return PlatoReturn;
         }
     }
