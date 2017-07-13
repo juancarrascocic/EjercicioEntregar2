@@ -45,7 +45,7 @@ namespace EjercicioEntregar2
             {
                 return false;
             }
-            return true;
+            return this.mAlimento1.Peso ==((Plato)obj).mAlimento1.Peso && this.mAlimento2.Peso == ((Plato)obj).mAlimento2.Peso;
         }
 
         public override string ToString()
