@@ -8,14 +8,14 @@ namespace EjercicioEntregar2
 {
     public class RecetaRepository : IRecetaRepository
     {
-        public static List<Receta> listaAlimentos= new List<Receta>();
+        public static IList<Receta> listaAlimentos= new List<Receta>();
 
         public void Create(Receta receta)
         {
-            if (listaAlimentos.Contains(receta))
-            {
+            //if (!listaAlimentos.Contains(receta))
+            //{
                 listaAlimentos.Add(receta);
-            }
+            //}
         }
     }
 }

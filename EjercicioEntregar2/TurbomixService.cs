@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjercicioEntregar2
 {
-    public class TurbomixService
+    public class TurbomixService : ITurbomixService
     {
         public IBascula Bascula { get; set; }
         public ICocina Cocina { get; set; }

@@ -66,6 +66,7 @@
     <Compile Include="CocinaServiceTest.cs" />
     <Compile Include="RecetarioServiceTest.cs" />
     <Compile Include="TermometroTest.cs" />
+    <Compile Include="TurbomixConRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EjercicioEntregar2\Turbomix.csproj">

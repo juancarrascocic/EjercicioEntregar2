@@ -3,5 +3,6 @@
     public interface IRecetaRepository
     {
         void Create(Receta receta);
+       
     }
 }

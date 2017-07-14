@@ -46,11 +46,7 @@ namespace UnitTestProject1
             Plato mPlato = new Plato(mAlimento1, mAlimento2);
             Assert.AreEqual(mPlato, resultado);
         }
-        [TestMethod]
-        public void guardarReceta()
-        {
 
-        }
 
     }
 }
